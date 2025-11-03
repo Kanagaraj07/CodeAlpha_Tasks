@@ -190,3 +190,12 @@ h2 {
     font-size: 1.1rem;
   }
 }
+/* Fix for title wrapping issue */
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
