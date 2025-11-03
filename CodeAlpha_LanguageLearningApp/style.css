@@ -128,3 +128,27 @@ button:hover {
   font-size: 18px;
   margin-top: 10px;
 }
+/* Responsive heading sizes */
+h1 {
+  font-size: clamp(1.4rem, 4vw, 2.2rem);
+  text-align: center;
+}
+
+h2 {
+  font-size: clamp(1.1rem, 3vw, 1.8rem);
+  text-align: center;
+}
+
+/* For small screens, center everything nicely */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+}
