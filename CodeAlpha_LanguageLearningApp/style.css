@@ -24,7 +24,7 @@ body {
   margin-top: 30px;
 }
 
-/* 🌈 Fixed, responsive heading */
+/* 🌈 Heading with soft pink-purple gradient */
 h1 {
   font-weight: 800;
   text-align: center;
@@ -32,7 +32,7 @@ h1 {
   word-wrap: break-word;
   overflow-wrap: break-word;
   font-size: clamp(1.4rem, 4vw, 2.2rem);
-  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  background: linear-gradient(90deg, #E0C3FC, #8EC5FC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
@@ -57,7 +57,7 @@ select, button {
 }
 
 button {
-  background-color: #6a11cb;
+  background-color: #b388ff;
   color: white;
   border: none;
   cursor: pointer;
@@ -66,7 +66,7 @@ button {
 }
 
 button:hover {
-  opacity: 0.9;
+  background-color: #9c27b0;
 }
 
 /* 🃏 Flashcards */
@@ -115,7 +115,7 @@ button:hover {
 }
 
 .card-back {
-  background: #d0f0c0;
+  background: #f8bbd0;
   transform: rotateY(180deg);
 }
 
@@ -125,7 +125,7 @@ h2 {
   text-align: center;
   font-weight: 700;
   color: #333;
-  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  background: linear-gradient(90deg, #ba68c8, #f8bbd0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -147,7 +147,7 @@ h2 {
 }
 
 #quiz-options button:hover {
-  background: #f0fff4;
+  background: #fce4ec;
   color: #000;
   transform: scale(1.03);
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
