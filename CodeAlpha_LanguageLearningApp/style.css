@@ -12,34 +12,36 @@ body {
   margin: 0;
 }
 
-/* ---- Container ---- */
 .container {
   background: #fff;
-  padding: 25px;
+  padding: 30px;
   border-radius: 20px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
   width: 95%;
   max-width: 600px;
   text-align: center;
+  margin-top: 30px;
 }
 
-/* ---- Headings ---- */
+/* 🌍 Fancy gradient title */
 h1 {
-  font-size: clamp(1.6rem, 4vw, 2.5rem);
-  color: #222;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-weight: 800;
   text-align: center;
-  font-weight: 700;
-  margin-bottom: 15px;
+  line-height: 1.3;
+  word-break: keep-all;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
 }
 
-h2 {
-  font-size: clamp(1.1rem, 3vw, 1.8rem);
-  color: #333;
-  margin-bottom: 10px;
-  text-align: center;
+.emoji {
+  font-size: 1.5em;
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
-/* ---- Language Selector ---- */
 .language-select {
   margin-bottom: 20px;
 }
@@ -64,7 +66,6 @@ button:hover {
   opacity: 0.9;
 }
 
-/* ---- Flashcards ---- */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -114,7 +115,18 @@ button:hover {
   transform: rotateY(180deg);
 }
 
-/* ---- Quiz ---- */
+/* 🎨 Make Flashcards and Quiz Time titles match style */
+h2 {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  text-align: center;
+  font-weight: 700;
+  color: #333;
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Quiz Buttons */
 #quiz-options button {
   display: block;
   width: 80%;
@@ -144,24 +156,20 @@ button:hover {
   margin-top: 10px;
 }
 
-/* ---- Responsive Layout ---- */
+/* 📱 Mobile Friendly */
 @media (max-width: 600px) {
   .container {
     width: 90%;
-    margin: 0 auto;
-    padding: 15px;
+    margin: 10px auto;
+    padding: 20px;
+  }
+
+  button, select {
+    font-size: 1rem;
+    padding: 10px 14px;
   }
 
   h1 {
-    font-size: 1.6rem;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-  }
-
-  button {
-    font-size: 1rem;
-    padding: 10px 14px;
+    font-size: 1.8rem;
   }
 }
